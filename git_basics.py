@@ -1,6 +1,6 @@
-"""File .py ini dibuat semata untuk memenuhi tugas AIML Batch 5 Dibimbing.
-Materi yang ada di sini dibuat oleh penulis berdasarkan materi git yang telah dipelajari di hari ke-5 bootcamp AIML Dibiming dan beberapa dilengkapi dengan sumber dari internet.
-DISCLAIMER: Deskripsi dan pengelompokan dari masing-masing perintah masih perlu diperiksa lagi keakuratannya.
+"""
+DISCLAIMER: Isi materi yang ada di sini tidak dijamin keakuratannya karena dibuat hanya berdasarkan catatan pribadi penulis selama course.
+Materi ini dibuat semata untuk memenuhi tugas bootcamp Dibimbing AIML4 Day 5 - Git.
 """
 
 def basic_workflow():
@@ -18,14 +18,14 @@ def basic_workflow():
 def configure_global_git_username_and_email():
     return [
         {
-            "cmd":"git -config --global user.name",
+            "cmd": "git -config --global user.name",
             "desc": "memeriksa username yang akan dipakai dalam proses commit. Jika menggunakan parameter --global, setting yang dimaksud adalah setting yang diaplikasikan dalam level os. Untuk Windows OS, setting ini disimpan dalam 'C:\\Users\\\\.gitconfig'. Jika hasil menjalankan perintah ini adalah kosong maka artinya belum ada setting username yang terdaftar secara global. Untuk mendaftarkan secara global tambahkan parameter nama seperti ini: 'git -config --global user.name nama_anda'",
             "src": [
                 "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config"
             ]
         },
         {
-            "cmd":"git -config --global user.email",
+            "cmd": "git -config --global user.email",
             "desc": "memeriksa email yang akan dipakai dalam proses commit. Parameter --global menunjukkan bahwa setting yang dimaksud adalah setting yang diaplikasikan dalam level os. Untuk Windows OS, setting ini disimpan dalam 'C:\\Users\\\\.gitconfig'. Jika hasil menjalankan perintah ini adalah kosong maka artinya belum ada setting username yang terdaftar secara global. Untuk mendaftarkan secara global tambahkan parameter email seperti ini: 'git -config --global user.email email_anda@domain.nya'",
             "src": [
                 "https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config"
@@ -36,13 +36,13 @@ def configure_global_git_username_and_email():
 def create_local_repository():
     return [
         {
-            "cmd":"git init",
+            "cmd": "git init",
             "desc": "Dipakai jika terdapat project di dalam perangkat lokal dan project tersebut belum memiliki repository git. 'git init' akan menghasilkan hidden folder '.git' di dalam folder project",
             "src": []
         },
         {
-            "cmd":"git clone ",
-            "desc": "Untuk menduplikat project dari remote repository (Github, misalnya). Jika mempergunakan 'git clone', di dalam folder project sudah ada folder '.git' yang berarti local repository sudah secara otomatis dibuatkan oleh perintah ini",
+            "cmd": "git clone <url-remote-git>",
+            "desc": 'Untuk menduplikat project dari remote repository (misalnya, git clone "https://github.com/mfatihz/dibimbing_aiml4_day_5_git_assignment.git"). Jika mempergunakan \'git clone\', di dalam folder project sudah ada folder \'.git\' yang berarti local repository sudah secara otomatis dibuatkan oleh perintah ini',
             "src": []
         }
     ]
