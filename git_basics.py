@@ -47,15 +47,6 @@ def create_local_repository():
         }
     ]
 
-def check_repository_status():
-    return [
-        {
-            "cmd": "git status",
-            "desc": "Menampilkan status working directory dan staging area: perubahan yang sudah dan belum dilakukan serta menampilkan file mana saja yang sudah di-track",
-            "src": ["https://www.atlassian.com/git/tutorials/inspecting-a-repository"]
-        }
-    ]
-
 def add_files_to_staging_area():
     return [
         {
@@ -76,5 +67,14 @@ def save_changes_locally():
             "cmd": 'git commit -m "komentar untuk commit. NOTE: setiap commit harus selalu disertai komentar"',
             "desc": "Mirip save point! menyimpan history perubahan secara lokal",
             "src": []
+        }
+    ]
+
+def check_repository_status():
+    return [
+        {
+            "cmd": "git status",
+            "desc": "Menampilkan status working directory dan staging area: perubahan yang sudah dan belum dilakukan serta menampilkan file mana saja yang sudah di-track",
+            "src": ["https://www.atlassian.com/git/tutorials/inspecting-a-repository"]
         }
     ]
