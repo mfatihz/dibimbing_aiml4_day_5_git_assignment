@@ -7,7 +7,7 @@ def check_branchs():
     return [
         {
             "cmd": "git branch",
-            "desc": "Menampilkan branch yang ada dan yang sedang aktif",
+            "desc": "Menampilkan daftar branch yang ada dan sekaligus menandai branch yang sedang aktif",
             "src": []
         }
     ]
@@ -28,6 +28,15 @@ def change_active_branch():
         {
             "cmd": 'git checkout "nama-branch"',
             "desc": "Berpindah ke branch 'nama-branch'",
+            "src": []
+        }
+    ]
+
+def merge_branchs():
+    return [
+        {
+            "cmd": 'git merge "nama-branch-yang ingin digabungkan"',
+            "desc": "Menggabungkan branch 'nama-branch-yang-ingin-digabungkan' ke dalam branch yang sedang aktif. Perintah ini dilakukan dari branch yang akan menjadi tujuan penggabungannya jadi pastikan checkout dahulu ke branch tujuan tersebut",
             "src": []
         }
     ]
